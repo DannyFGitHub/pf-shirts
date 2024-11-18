@@ -13,6 +13,6 @@ export default defineConfig({
       "@src": resolve(__dirname, "./src"),
     },
   },
-  base: process.env.APP_ENV === "sandbox" ? "/pf-shirts/" : "/",
+  base: process.env.APP_ENV === "sandbox" ? "./" : "/",
   plugins: [react()],
 });
