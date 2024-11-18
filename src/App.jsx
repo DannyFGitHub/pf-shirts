@@ -116,141 +116,143 @@ const Scene = () => {
         </Clouds>
       </Center>
       <Scroll html>
-        {/** Put a div next to the bounding box of the shirt that says the name of the shirt */}
-        <div
-          style={
-            // center the div in the middle of the screen and split it in half
-            {
-              position: "absolute",
-              top: "50vh",
-              left: "30vw",
-              transform: "translate(-50%, -50%)",
-              color: "white",
+        <div style={{ fontSize: "1vw" }}>
+          {/** Put a div next to the bounding box of the shirt that says the name of the shirt */}
+          <div
+            style={
+              // center the div in the middle of the screen and split it in half
+              {
+                position: "absolute",
+                top: "50vh",
+                left: "30vw",
+                transform: "translate(-50%, -50%)",
+                color: "white",
+              }
             }
-          }
-        >
+          >
+            <div
+              style={{
+                //divide this into two divs side by side
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "30vw",
+                height: "50vh",
+                filter: "drop-shadow(0px 0px 20px white)",
+              }}
+            >
+              <div>
+                <div style={{ textAlign: "start" }}>
+                  <h1 style={{ color: "white" }}>CEM</h1>
+                </div>
+                <div>
+                  As a not-for-profit, non-denominational, Christian organisation CEM is involved in various aspects of Christian Education,
+                  including the delivery of school support services, developing curriculum, operating early learning centres and helping
+                  home schoolers. The organisation manages five distinct brands.
+                </div>
+                <hr />
+                <div>
+                  <ul>
+                    <li>
+                      Designed and developed multiple web applications and services using various technologies: (.NET), React.js, NodeJs,
+                      Typescript, Swift, Firebase, AWS Serverless, Canvas LMS (JS Development)
+                    </li>
+                    <li>Integrations with Intercom, Twilio (SMS) & BurstSMS</li>
+                    <li>Implemented cloud-based solutions using AWS Serverless & Workato</li>
+                    <li>CICD with Bitbucket Pipelines for automated testing & deployment</li>
+                  </ul>
+                </div>
+                <div>
+                  Roles:
+                  <div>Software Engineer</div>
+                  <div>IT Officer - Network and System Administrator</div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div
             style={{
-              //divide this into two divs side by side
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "30vw",
-              height: "50vh",
+              position: "absolute",
+              color: "white",
+              top: "150vh",
+              left: "30vw",
+              transform: "translate(-50%, -50%)",
               filter: "drop-shadow(0px 0px 20px white)",
             }}
           >
-            <div>
-              <div style={{ textAlign: "start" }}>
-                <h1 style={{ color: "white" }}>CEM</h1>
-              </div>
+            <div
+              style={{
+                //divide this into two divs side by side
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "30vw",
+                height: "50vh",
+              }}
+            >
               <div>
-                As a not-for-profit, non-denominational, Christian organisation CEM is involved in various aspects of Christian Education,
-                including the delivery of school support services, developing curriculum, operating early learning centres and helping home
-                schoolers. The organisation manages five distinct brands.
-              </div>
-              <hr />
-              <div>
-                <ul>
-                  <li>
-                    Designed and developed multiple web applications and services using various technologies: (.NET), React.js, NodeJs,
-                    Typescript, Swift, Firebase, AWS Serverless, Canvas LMS (JS Development)
-                  </li>
-                  <li>Integrations with Intercom, Twilio (SMS) & BurstSMS</li>
-                  <li>Implemented cloud-based solutions using AWS Serverless & Workato</li>
-                  <li>CICD with Bitbucket Pipelines for automated testing & deployment</li>
-                </ul>
-              </div>
-              <div>
-                Roles:
-                <div>Software Engineer</div>
-                <div>IT Officer - Network and System Administrator</div>
+                <div style={{ textAlign: "center", margin: "1rem" }}>
+                  <h1 style={{ color: "white" }}>Apple Inc.</h1>
+                </div>
+                <div>
+                  Apple Inc. is an American multinational corporation and technology company headquartered and incorporated in Cupertino,
+                  California, in Silicon Valley. It is best known for its consumer electronics, software, and services. Founded in 1976 as
+                  Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as
+                  Apple Computer, Inc. the following year. It was renamed Apple Inc. in 2007 as the company had expanded its focus from
+                  computers to consumer electronics. Apple is the largest technology company by revenue, with US$391.04 billion in 2024.
+                </div>
+                <hr />
+                <div>
+                  Apple Corporate Roles:
+                  <div>Apple Advisor Coach</div>
+                  <div>Mac+ Senior Advisor</div>
+                  <div>iOS Senior Advisor</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            color: "white",
-            top: "150vh",
-            left: "30vw",
-            transform: "translate(-50%, -50%)",
-            filter: "drop-shadow(0px 0px 20px white)",
-          }}
-        >
           <div
             style={{
-              //divide this into two divs side by side
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "30vw",
-              height: "50vh",
+              position: "absolute",
+              color: "white",
+              transform: "translate(-50%, -50%)",
+              top: "250vh",
+              left: "30vw",
+              filter: "drop-shadow(0px 0px 20px white)",
             }}
           >
-            <div>
-              <div style={{ textAlign: "center", margin: "1rem" }}>
-                <h1 style={{ color: "white" }}>Apple Inc.</h1>
-              </div>
+            <div
+              style={{
+                //divide this into two divs side by side
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "30vw",
+                height: "50vh",
+              }}
+            >
               <div>
-                Apple Inc. is an American multinational corporation and technology company headquartered and incorporated in Cupertino,
-                California, in Silicon Valley. It is best known for its consumer electronics, software, and services. Founded in 1976 as
-                Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as
-                Apple Computer, Inc. the following year. It was renamed Apple Inc. in 2007 as the company had expanded its focus from
-                computers to consumer electronics. Apple is the largest technology company by revenue, with US$391.04 billion in 2024.
-              </div>
-              <hr />
-              <div>
-                Apple Corporate Roles:
-                <div>Apple Advisor Coach</div>
-                <div>Mac+ Senior Advisor</div>
-                <div>iOS Senior Advisor</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            color: "white",
-            transform: "translate(-50%, -50%)",
-            top: "250vh",
-            left: "30vw",
-            filter: "drop-shadow(0px 0px 20px white)",
-          }}
-        >
-          <div
-            style={{
-              //divide this into two divs side by side
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "30vw",
-              height: "50vh",
-            }}
-          >
-            <div>
-              <div style={{ textAlign: "center", margin: "1rem" }}>
-                <h1 style={{ color: "white" }}>IP Technologies</h1>
-              </div>
-              <div>
-                IP Technologies are a highly-specialized IP hardware and software supplier and IP technology integration company with
-                experience in commercial solutions in small, medium and large businesses across Australia as well as in residential
-                applications.
-              </div>
-              <hr />
-              <div>
-                <ul>
-                  <li>
-                    Data Cabling & Network Rack Installations, Phillips Dynalite Programming, Home Automation Light & Controller
-                    Installations, Boardroom Automation
-                  </li>
-                </ul>
-              </div>
-              <div>
-                Roles:
-                <div>IT Trade Assistant</div>
+                <div style={{ textAlign: "center", margin: "1rem" }}>
+                  <h1 style={{ color: "white" }}>IP Technologies</h1>
+                </div>
+                <div>
+                  IP Technologies are a highly-specialized IP hardware and software supplier and IP technology integration company with
+                  experience in commercial solutions in small, medium and large businesses across Australia as well as in residential
+                  applications.
+                </div>
+                <hr />
+                <div>
+                  <ul>
+                    <li>
+                      Data Cabling & Network Rack Installations, Phillips Dynalite Programming, Home Automation Light & Controller
+                      Installations, Boardroom Automation
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  Roles:
+                  <div>IT Trade Assistant</div>
+                </div>
               </div>
             </div>
           </div>
