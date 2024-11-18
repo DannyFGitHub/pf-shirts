@@ -30,13 +30,19 @@ const Scene = () => {
   const scroll = useScroll();
   const timeline = useRef();
 
-  const { position, rotation, cameraPositionIndex, usePositionSlider, useScrollBarPosition } = useControls({
-    useScrollBarPosition: { value: true },
-    usePositionSlider: { value: true },
-    cameraPositionIndex: { value: 0, min: 0, max: 2, step: 1 },
-    position: { value: [-0.8, 0.1, 2.5], step: 0.01 },
-    rotation: { value: [0, -1, 0], step: 0.01 },
-  });
+  // const { position, rotation, cameraPositionIndex, usePositionSlider, useScrollBarPosition } = useControls({
+  //   useScrollBarPosition: { value: true },
+  //   usePositionSlider: { value: true },
+  //   cameraPositionIndex: { value: 0, min: 0, max: 2, step: 1 },
+  //   position: { value: [-0.8, 0.1, 2.5], step: 0.01 },
+  //   rotation: { value: [0, -1, 0], step: 0.01 },
+  // });
+
+  const [useScrollBarPosition, setUseScrollBarPosition] = React.useState(true);
+  const [usePositionSlider, setUsePositionSlider] = React.useState(true);
+  const [cameraPositionIndex, setCameraPositionIndex] = React.useState(0);
+  const [position, setPosition] = React.useState([-0.8, 0.1, 2.5]);
+  const [rotation, setRotation] = React.useState([0, -1, 0]);
 
   const cemshirt = useLoader(GLTFLoader, "/models/cemshirt.glb");
   const appleshirt = useLoader(GLTFLoader, "/models/appleshirt.glb");
