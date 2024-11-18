@@ -44,9 +44,9 @@ const Scene = () => {
   const [position, setPosition] = React.useState([-0.8, 0.1, 2.5]);
   const [rotation, setRotation] = React.useState([0, -1, 0]);
 
-  const cemshirt = useLoader(GLTFLoader, "/models/cemshirt.glb");
-  const appleshirt = useLoader(GLTFLoader, "/models/appleshirt.glb");
-  const iptechshirt = useLoader(GLTFLoader, "/models/iptechshirt.glb");
+  const cemshirt = useLoader(GLTFLoader, "/pf-shirts/models/cemshirt.glb");
+  const appleshirt = useLoader(GLTFLoader, "/pf-shirts/models/appleshirt.glb");
+  const iptechshirt = useLoader(GLTFLoader, "/pf-shirts/models/iptechshirt.glb");
 
   const groupLocations = [
     { position: [-1.5, 0, 2.5], rotation: [0, 1, 0] },
