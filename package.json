@@ -2,6 +2,7 @@
   "name": "react-three-vite",
   "version": "1.0.2",
   "description": "PF-Shirts",
+  "private": true,
   "keywords": [
     "r3f",
     "react",
@@ -12,7 +13,7 @@
     "sandbox",
     "codesandbox"
   ],
-  "homepage": "https://DannyFGitHub.github.io/pf-shirts",
+  "homepage": "https://dannyfgithub.github.io/pf-shirts/",
   "repository": "github:dannyfgithub/pf-shirts",
   "license": "MIT",
   "dependencies": {
@@ -35,7 +36,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": [
     ">0.2%",

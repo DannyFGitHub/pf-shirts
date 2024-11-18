@@ -13,8 +13,5 @@ export default defineConfig({
       "@src": resolve(__dirname, "./src"),
     },
   },
-  build: {
-    outDir: "build",
-  },
   plugins: [react()],
 });
